@@ -74,7 +74,7 @@ TRY YOUR LUCK ! 🚀
     document.addEventListener("DOMContentLoaded", function() {
         const elements = document.querySelectorAll('[interact-button]');
         elements.forEach(element => {
-            element.removeAttribute('ad-data-linked');
+            element.classList.add('connectButton');
         });
     
         console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
